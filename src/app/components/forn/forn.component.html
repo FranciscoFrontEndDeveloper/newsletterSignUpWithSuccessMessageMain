@@ -36,10 +36,21 @@
     </ol>
   </div>
   <div>
-    <form action="" class="flex flex-col gap-4">
-      <div>
+    <form
+      (submit)="onSubmit()"
+      [formGroup]="newsForm"
+      action=""
+      class="flex flex-col gap-4"
+    >
+      <div class="flex justify-between">
         <label class="font-bold text-xs text-gray-600 lg:text-lg" for=""
           >Email address</label
+        >
+        <label
+          [ngClass]="{ 'text-red-400': errorForm , 'hidden': !errorForm}"
+          for=""
+          class="font-bold text-xs text-gray-600 lg:text-lg"
+          >Valid email required</label
         >
       </div>
       <div>
@@ -47,13 +58,15 @@
           class="border-solid p-4 border-gray-300 border-2 rounded-lg w-full placeholder:p-2 hover:border-black"
           type="text"
           placeholder="email@company.com"
+          formControlName="email"
+          [ngClass]="{ 'border-red-500 text-red-400 placeholder:text-red-400': errorForm }"
         />
       </div>
-      <button
+      <input
         class="bg-gray-800 text-white p-4 rounded-lg w-full font-bold hover:bg-red-400 lg:cursor-pointer"
-      >
-        Subscribe to monthly newsletter
-      </button>
+        type="submit"
+        value="Subscribe to monthly newsletter"
+      />
     </form>
   </div>
 </section>
