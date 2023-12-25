@@ -1,21 +1,30 @@
 <div
   class="lg:bg-gray-800 lg:w-full lg:h-screen flex items-center justify-center"
 >
-  <div class="bg-white">
-    <div>
-      <picture><img src="" alt="check" /></picture>
+  <div
+    class="bg-white p-5 w-full h-screen grid grid-cols-1 grid-rows-4 lg:w-1/2 lg:h-2/3 lg:p-20 gap-20 rounded-[50px]"
+  >
+    <div class="flex items-end">
+      <picture
+        ><img class="w-20" src="assets/images/icon-list.svg" alt="check"
+      /></picture>
     </div>
-    <div>
-      <h1>Thanks for subscribing!</h1>
+    <div class="flex items-center">
+      <h1 class="text-5xl font-bold lg:text-7xl">Thanks for subscribing!</h1>
     </div>
-    <div>
-      <p>
-        A confirmation email has been sent to ash&#64;loremcompany.com. Please open
-        it and click the button inside to confirm your subscription.
+    <div class="flex items-start h-full">
+      <p class="text-base lg:text-2xl w-full">
+        A confirmation email has been sent to
+        <strong>ash&#64;loremcompany.com.</strong> Please open it and click the
+        button inside to confirm your subscription.
       </p>
     </div>
     <div>
-      <input type="text" value="Dismiss message" />
+      <input
+        class="bg-gray-800 text-lg rounded-lg text-white w-full text-center py-5 lg:hover:bg-red-400 lg:cursor-pointer"
+        type="text"
+        value="Dismiss message"
+      />
     </div>
   </div>
 </div>
