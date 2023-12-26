@@ -70,10 +70,12 @@
             "production": {
               "buildTarget": "newsletterSignUpWithSuccessMessageMain:build:production"
             },
+
             "development": {
               "buildTarget": "newsletterSignUpWithSuccessMessageMain:build:development"
             }
           },
+
           "defaultConfiguration": "development"
         },
         "extract-i18n": {
