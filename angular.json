@@ -20,6 +20,7 @@
             "outputPath": "dist/newsletter-sign-up-with-success-message-main",
             "index": "src/index.html",
             "browser": "src/main.ts",
+            "baseHref": "/newsletterSignUpWithSuccessMessageMain/",
             "polyfills": [
               "zone.js"
             ],
