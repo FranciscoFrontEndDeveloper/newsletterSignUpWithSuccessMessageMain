@@ -1,0 +1,304 @@
+{
+  "version": "6.0",
+  "nxVersion": "17.0.3",
+  "deps": {
+    "@angular/animations": "^17.0.0",
+    "@angular/common": "^17.0.0",
+    "@angular/compiler": "^17.0.0",
+    "@angular/core": "^17.0.0",
+    "@angular/forms": "^17.0.0",
+    "@angular/platform-browser": "^17.0.0",
+    "@angular/platform-browser-dynamic": "^17.0.0",
+    "@angular/platform-server": "^17.0.0",
+    "@angular/router": "^17.0.0",
+    "@angular/ssr": "^17.0.3",
+    "express": "^4.18.2",
+    "rxjs": "~7.8.0",
+    "tslib": "^2.3.0",
+    "zone.js": "~0.14.2",
+    "@angular-devkit/build-angular": "^17.0.3",
+    "@angular-eslint/builder": "17.0.0-alpha.0",
+    "@angular-eslint/eslint-plugin": "17.0.0-alpha.0",
+    "@angular-eslint/eslint-plugin-template": "17.0.0-alpha.0",
+    "@angular-eslint/schematics": "17.0.0-alpha.0",
+    "@angular-eslint/template-parser": "17.0.0-alpha.0",
+    "@angular/cli": "^17.0.3",
+    "@angular/compiler-cli": "^17.0.0",
+    "@types/express": "^4.17.17",
+    "@types/jasmine": "~5.1.0",
+    "@types/node": "^18.18.0",
+    "@typescript-eslint/eslint-plugin": "6.10.0",
+    "@typescript-eslint/parser": "6.10.0",
+    "angular-cli-ghpages": "^0.6.2",
+    "autoprefixer": "^10.4.16",
+    "eslint": "^8.53.0",
+    "jasmine-core": "~5.1.0",
+    "karma": "~6.4.0",
+    "karma-chrome-launcher": "~3.2.0",
+    "karma-coverage": "~2.2.0",
+    "karma-jasmine": "~5.1.0",
+    "karma-jasmine-html-reporter": "~2.1.0",
+    "postcss": "^8.4.31",
+    "tailwindcss": "^3.3.5",
+    "typescript": "~5.2.2"
+  },
+  "pathMappings": {},
+  "nxJsonPlugins": [],
+  "fileMap": {
+    "projectFileMap": {},
+    "nonProjectFiles": [
+      {
+        "file": ".editorconfig",
+        "hash": "6686520031028425313"
+      },
+      {
+        "file": ".eslintrc.json",
+        "hash": "14645878845883387518"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "13044518069027839699"
+      },
+      {
+        "file": ".vscode/extensions.json",
+        "hash": "5331566439708925252"
+      },
+      {
+        "file": ".vscode/launch.json",
+        "hash": "17038929134016848735"
+      },
+      {
+        "file": ".vscode/tasks.json",
+        "hash": "5336636969995539451"
+      },
+      {
+        "file": "README.md",
+        "hash": "5834697174486967612"
+      },
+      {
+        "file": "angular.json",
+        "hash": "11222041237902128304"
+      },
+      {
+        "file": "docs/3rdpartylicenses.txt",
+        "hash": "220949288920705669"
+      },
+      {
+        "file": "docs/browser/assets/images/favicon-32x32.png",
+        "hash": "12744533118699211984"
+      },
+      {
+        "file": "docs/browser/assets/images/icon-list.svg",
+        "hash": "15236759434103689006"
+      },
+      {
+        "file": "docs/browser/assets/images/icon-success.svg",
+        "hash": "7887633660303796815"
+      },
+      {
+        "file": "docs/browser/assets/images/illustration-sign-up-desktop.svg",
+        "hash": "778467189917277143"
+      },
+      {
+        "file": "docs/browser/assets/images/illustration-sign-up-mobile.svg",
+        "hash": "7433180548135497444"
+      },
+      {
+        "file": "docs/browser/favicon.ico",
+        "hash": "3988961587069885523"
+      },
+      {
+        "file": "docs/browser/index.html",
+        "hash": "2127112373370560845"
+      },
+      {
+        "file": "docs/browser/main-T2XO45MR.js",
+        "hash": "2294700022036110882"
+      },
+      {
+        "file": "docs/browser/polyfills-LZBJRJJE.js",
+        "hash": "5941810377592141465"
+      },
+      {
+        "file": "docs/browser/styles-MXYJZIGT.css",
+        "hash": "10856054110383850518"
+      },
+      {
+        "file": "docs/browser/thanks/index.html",
+        "hash": "4429126974086778686"
+      },
+      {
+        "file": "docs/prerendered-routes.json",
+        "hash": "15111324297921983340"
+      },
+      {
+        "file": "docs/server/chunk-53JWIC36.mjs",
+        "hash": "3116721081723747723"
+      },
+      {
+        "file": "docs/server/chunk-GYLU2X2K.mjs",
+        "hash": "16505259706300779639"
+      },
+      {
+        "file": "docs/server/chunk-KRLCULJA.mjs",
+        "hash": "15337594952824951989"
+      },
+      {
+        "file": "docs/server/chunk-YDO66MTO.mjs",
+        "hash": "17313473948055641449"
+      },
+      {
+        "file": "docs/server/index.server.html",
+        "hash": "4852988287305744660"
+      },
+      {
+        "file": "docs/server/main.server.mjs",
+        "hash": "12598501097134761338"
+      },
+      {
+        "file": "docs/server/polyfills.server.mjs",
+        "hash": "7968502407974892923"
+      },
+      {
+        "file": "docs/server/render-utils.server.mjs",
+        "hash": "1418387733816107370"
+      },
+      {
+        "file": "docs/server/server.mjs",
+        "hash": "2190799124697355919"
+      },
+      {
+        "file": "package-lock.json",
+        "hash": "7186112059511305869"
+      },
+      {
+        "file": "package.json",
+        "hash": "11535796626671202848"
+      },
+      {
+        "file": "server.ts",
+        "hash": "7713808127824314998"
+      },
+      {
+        "file": "src/app/app.component.html",
+        "hash": "16660521701194831472"
+      },
+      {
+        "file": "src/app/app.component.sass",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "src/app/app.component.spec.ts",
+        "hash": "14411600702274054785"
+      },
+      {
+        "file": "src/app/app.component.ts",
+        "hash": "3787404966802247162"
+      },
+      {
+        "file": "src/app/app.config.server.ts",
+        "hash": "14750464052796800194"
+      },
+      {
+        "file": "src/app/app.config.ts",
+        "hash": "12630557031237925337"
+      },
+      {
+        "file": "src/app/app.routes.ts",
+        "hash": "4264169889985577775"
+      },
+      {
+        "file": "src/app/components/forn/forn.component.html",
+        "hash": "7536405305748595007"
+      },
+      {
+        "file": "src/app/components/forn/forn.component.ts",
+        "hash": "7422675807042045773"
+      },
+      {
+        "file": "src/app/components/image/image.component.html",
+        "hash": "14489066778874762928"
+      },
+      {
+        "file": "src/app/components/image/image.component.ts",
+        "hash": "16581041985581483952"
+      },
+      {
+        "file": "src/app/components/main/main.component.html",
+        "hash": "10968546931142706265"
+      },
+      {
+        "file": "src/app/components/main/main.component.ts",
+        "hash": "13783906452880837874"
+      },
+      {
+        "file": "src/app/components/thanks/thanks.component.html",
+        "hash": "14717887277749078326"
+      },
+      {
+        "file": "src/app/components/thanks/thanks.component.ts",
+        "hash": "8264811885185211930"
+      },
+      {
+        "file": "src/assets/.gitkeep",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "src/assets/images/favicon-32x32.png",
+        "hash": "12744533118699211984"
+      },
+      {
+        "file": "src/assets/images/icon-list.svg",
+        "hash": "15236759434103689006"
+      },
+      {
+        "file": "src/assets/images/icon-success.svg",
+        "hash": "7887633660303796815"
+      },
+      {
+        "file": "src/assets/images/illustration-sign-up-desktop.svg",
+        "hash": "778467189917277143"
+      },
+      {
+        "file": "src/assets/images/illustration-sign-up-mobile.svg",
+        "hash": "7433180548135497444"
+      },
+      {
+        "file": "src/favicon.ico",
+        "hash": "3988961587069885523"
+      },
+      {
+        "file": "src/index.html",
+        "hash": "2463703269275572063"
+      },
+      {
+        "file": "src/main.server.ts",
+        "hash": "11653607448136507287"
+      },
+      {
+        "file": "src/main.ts",
+        "hash": "4927504514031276065"
+      },
+      {
+        "file": "src/styles.sass",
+        "hash": "565741349383971051"
+      },
+      {
+        "file": "tailwind.config.js",
+        "hash": "1320183968159465265"
+      },
+      {
+        "file": "tsconfig.app.json",
+        "hash": "17948364081101022842"
+      },
+      {
+        "file": "tsconfig.json",
+        "hash": "8074232012119176151"
+      },
+      {
+        "file": "tsconfig.spec.json",
+        "hash": "15575553540147145788"
+      }
+    ]
+  }
+}

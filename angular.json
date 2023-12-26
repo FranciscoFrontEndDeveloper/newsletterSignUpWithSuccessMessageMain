@@ -104,7 +104,7 @@
         "deploy": {
           "builder": "angular-cli-ghpages:deploy",
           "options": {
-            "baseHref": "https://github.com/FranciscoFrontEndDeveloper/newsletterSignUpWithSuccessMessageMain"
+            "baseHref": "/newsletterSignUpWithSuccessMessageMain"
           }
         },
         "lint": {
