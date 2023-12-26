@@ -20,7 +20,7 @@
             "outputPath": "dist/newsletter-sign-up-with-success-message-main",
             "index": "src/index.html",
             "browser": "src/main.ts",
-            "baseHref": "/newsletterSignUpWithSuccessMessageMain/",
+            "baseHref": "/FranciscoFrontEndDeveloper/newsletterSignUpWithSuccessMessageMain/",
             "polyfills": [
               "zone.js"
             ],
@@ -70,12 +70,10 @@
             "production": {
               "buildTarget": "newsletterSignUpWithSuccessMessageMain:build:production"
             },
-
             "development": {
               "buildTarget": "newsletterSignUpWithSuccessMessageMain:build:development"
             }
           },
-
           "defaultConfiguration": "development"
         },
         "extract-i18n": {
@@ -102,11 +100,29 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "baseHref": "https://github.com/FranciscoFrontEndDeveloper/newsletterSignUpWithSuccessMessageMain"
+          }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "src/**/*.ts",
+              "src/**/*.html"
+            ]
+          }
         }
       }
     }
   },
   "cli": {
-    "analytics": "18d17c28-71b0-41d0-926f-b8a71a858ba0"
+    "analytics": "18d17c28-71b0-41d0-926f-b8a71a858ba0",
+    "schematicCollections": [
+      "@angular-eslint/schematics"
+    ]
   }
 }
