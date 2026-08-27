@@ -20,3 +20,10 @@ summary, time, mark, audio, video
 body
   line-height: 1.5
   overflow: hidden
+
+@layer components
+  .screen-center
+    @apply lg:bg-gray-800 lg:w-full lg:h-screen flex items-center justify-center
+
+  .btn-primary
+    @apply bg-gray-800 text-white rounded-lg font-bold hover:bg-red-400 cursor-pointer

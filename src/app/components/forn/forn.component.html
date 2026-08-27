@@ -54,24 +54,23 @@
           [ngClass]="{ 'text-red-400': errorForm , 'hidden': !errorForm}"
           for="email"
           class="font-bold text-xs text-gray-600 lg:text-lg"
+          [class.visible]="errorForm"
           >Valid email required</p
         >
       </div>
       <div>
         <input
         id="email"
-          class="border-solid p-4 border-gray-300 border-2 rounded-lg w-full placeholder:p-2 hover:border-black"
+          class="btn-primary p-4 ..."
           type="text"
           placeholder="email@company.com"
           formControlName="email"
+          [attr.aria-invalid]="errorForm"
+          [attr.aria-describedby]="errorForm ? 'email-error' : null"
           [ngClass]="{ 'border-red-500 text-red-400 placeholder:text-red-400': errorForm }"
         />
       </div>
-      <input
-        class="bg-gray-800 text-white p-4 rounded-lg w-full font-bold hover:bg-red-400 lg:cursor-pointer"
-        type="submit"
-        value="Subscribe to monthly newsletter"
-      />
+        <button type="submit" class="btn-primary text-lg text-center py-5 w-full ...">Subscribe to monthly newsletter</button>
     </form>
   </div>
 </section>
