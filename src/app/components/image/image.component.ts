@@ -1,4 +1,4 @@
-import { Component, HostListener } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -7,21 +7,16 @@ import { CommonModule } from '@angular/common';
   imports: [CommonModule],
   templateUrl: './image.component.html',
 })
-export class ImageComponent {
-  public imageForm!: string;
+export class ImageComponent implements OnInit {
+  public imageSrc!: string;
 
-  // @HostListener('window:click')
-  // onclick() {
-  //   console.log('click');
-  // }
   @HostListener('window:resize')
   onResize() {
-    if (window.innerWidth > 1024) {
-      this.imageForm = 'assets/images/illustration-sign-up-desktop.svg';
-    } else {
-      this.imageForm = 'assets/images/illustration-sign-up-mobile.svg';
-    }
+    this.imageSrc = window.innerWidth > 1024
+      ? 'assets/images/illustration-sign-up-desktop.svg'
+      : 'assets/images/illustration-sign-up-mobile.svg';
   }
+
   ngOnInit(): void {
     //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
     //Add 'implements OnInit' to the class.
