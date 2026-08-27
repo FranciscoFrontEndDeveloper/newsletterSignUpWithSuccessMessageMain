@@ -28,8 +28,8 @@ export class FornComponent {
   onSubmit() {
     if (this.newsForm.valid) {
       this.Router.navigate(['/', 'thanks']);
+      this.Router.navigate(['/', 'thanks', { state: { email: this.newsForm.value } }]);
     } else {
-      this.Router.navigate(['/', '']);
       this.errorForm = true;
     }
   }

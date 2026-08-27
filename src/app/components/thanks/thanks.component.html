@@ -15,16 +15,14 @@
     <div class="flex items-start h-full">
       <p class="text-base lg:text-2xl w-full">
         A confirmation email has been sent to
-        <strong>ash&#64;loremcompany.com.</strong> Please open it and click the
+        <strong>{{ email }}</strong> Please open it and click the
         button inside to confirm your subscription.
       </p>
     </div>
     <div>
-      <input
-        class="bg-gray-800 text-lg rounded-lg text-white w-full text-center py-5 lg:hover:bg-red-400 lg:cursor-pointer"
-        type="text"
-        value="Dismiss message"
-      />
+      <button (click)="dismiss()" type="button" class="bg-gray-800 text-lg rounded-lg text-white w-full text-center py-5 lg:hover:bg-red-400 lg:cursor-pointer">
+        Dismiss message
+      </button>
     </div>
   </div>
 </div>
