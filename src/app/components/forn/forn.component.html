@@ -8,32 +8,36 @@
     </p>
   </div>
   <div>
-    <ol>
-      <ul class="flex py-1">
-        <picture class="w-auto">
+      <ul>
+<li class="flex py-1">
+          <picture class="w-auto">
           <img class="mr-4" src="assets/images/icon-list.svg" alt="" />
         </picture>
         <p class="w-full text-gray-600 font-normal lg:text-lg">
           Product discovery and building what matters
         </p>
+</li>
       </ul>
-      <ul class="flex py-1">
-        <picture class="w-auto">
+      <ul>
+        <li class="flex py-1">
+                  <picture class="w-auto">
           <img class="mr-4" src="assets/images/icon-list.svg" alt="" />
         </picture>
         <p class="w-full text-gray-600 font-normal lg:text-lg">
           Measuring to ensure updates are a success
         </p>
+        </li>
       </ul>
       <ul class="flex py-1">
-        <picture class="w-auto">
+        <li class="flex py-1">
+                  <picture class="w-auto">
           <img class="mr-4" src="assets/images/icon-list.svg" alt="" />
         </picture>
         <p class="w-full text-gray-600 font-normal lg:text-lg">
           And much more!
         </p>
+        </li>
       </ul>
-    </ol>
   </div>
   <div>
     <form
@@ -43,18 +47,19 @@
       class="flex flex-col gap-4"
     >
       <div class="flex justify-between">
-        <label class="font-bold text-xs text-gray-600 lg:text-lg" for=""
+        <label class="font-bold text-xs text-gray-600 lg:text-lg" for="email"
           >Email address</label
         >
-        <label
+        <p
           [ngClass]="{ 'text-red-400': errorForm , 'hidden': !errorForm}"
-          for=""
+          for="email"
           class="font-bold text-xs text-gray-600 lg:text-lg"
-          >Valid email required</label
+          >Valid email required</p
         >
       </div>
       <div>
         <input
+        id="email"
           class="border-solid p-4 border-gray-300 border-2 rounded-lg w-full placeholder:p-2 hover:border-black"
           type="text"
           placeholder="email@company.com"
