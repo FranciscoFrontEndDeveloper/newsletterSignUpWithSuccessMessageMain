@@ -16,14 +16,11 @@ import { Router } from '@angular/router';
   templateUrl: './forn.component.html',
 })
 export class FornComponent {
-  public newsForm!: FormGroup;
-  public errorForm!: boolean;
-  constructor(private FormBuilder: FormBuilder, private Router: Router) {
-    this.newsForm = this.FormBuilder.group({
-      email: ['', [Validators.required, Validators.email]],
-    });
-    this.errorForm = false
-  }
+  public newsForm = this.formBuilder.group({
+    email: ['', [Validators.required, Validators.email]],
+  });
+  public errorForm  = false
+  constructor(private formBuilder: FormBuilder, private Router: Router) { }
 
   onSubmit() {
     if (this.newsForm.valid) {

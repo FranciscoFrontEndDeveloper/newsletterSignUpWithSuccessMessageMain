@@ -9,6 +9,4 @@ import { FornComponent } from "../forn/forn.component";
     templateUrl: './main.component.html',
     imports: [CommonModule, ImageComponent, FornComponent]
 })
-export class MainComponent {
-
-}
+export class MainComponent {}
