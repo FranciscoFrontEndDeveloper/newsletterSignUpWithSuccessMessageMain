@@ -1,5 +1,11 @@
 <div class="lg:h-full lg:w-full">
-  <picture class=""
-    ><img class="sm:w-full lg:w-full lg:h-full" [src]="imageForm" alt="imagen main"
+  <picture class="w-full h-full flex"
+    >
+    <source media="(min-width: 1024px)" srcset="assets\images\illustration-sign-up-desktop.svg" />
+    <source media="(max-width: 1023px)" srcset="assets\images\illustration-sign-up-mobile.svg" />
+    <img
+      class="w-full h-full object-cover"
+      src="assets\images\illustration-sign-up-desktop.svg"
+      alt=""
   /></picture>
 </div>
