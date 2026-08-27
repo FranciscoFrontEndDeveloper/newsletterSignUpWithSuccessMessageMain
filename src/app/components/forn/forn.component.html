@@ -8,36 +8,32 @@
     </p>
   </div>
   <div>
-      <ul>
-<li class="flex py-1">
-          <picture class="w-auto">
+    <ul>
+      <li class="flex py-1">
+        <picture class="w-auto">
           <img class="mr-4" src="assets/images/icon-list.svg" alt="" />
         </picture>
         <p class="w-full text-gray-600 font-normal lg:text-lg">
           Product discovery and building what matters
         </p>
-</li>
-      </ul>
-      <ul>
-        <li class="flex py-1">
-                  <picture class="w-auto">
+      </li>
+      <li class="flex py-1">
+        <picture class="w-auto">
           <img class="mr-4" src="assets/images/icon-list.svg" alt="" />
         </picture>
         <p class="w-full text-gray-600 font-normal lg:text-lg">
           Measuring to ensure updates are a success
         </p>
-        </li>
-      </ul>
-      <ul class="flex py-1">
-        <li class="flex py-1">
-                  <picture class="w-auto">
+      </li>
+      <li class="flex py-1">
+        <picture class="w-auto">
           <img class="mr-4" src="assets/images/icon-list.svg" alt="" />
         </picture>
         <p class="w-full text-gray-600 font-normal lg:text-lg">
           And much more!
         </p>
-        </li>
-      </ul>
+      </li>
+    </ul>
   </div>
   <div>
     <form
@@ -51,17 +47,16 @@
           >Email address</label
         >
         <p
-          [ngClass]="{ 'text-red-400': errorForm , 'hidden': !errorForm}"
-          for="email"
+          id="email-error"
+          [ngClass]="{ 'text-red-400': errorForm, 'hidden': !errorForm }"
           class="font-bold text-xs text-gray-600 lg:text-lg"
-          [class.visible]="errorForm"
           >Valid email required</p
         >
       </div>
       <div>
         <input
-        id="email"
-          class="btn-primary p-4 ..."
+          id="email"
+          class="border-solid p-4 border-gray-300 border-2 rounded-lg w-full placeholder:p-2 hover:border-black"
           type="text"
           placeholder="email@company.com"
           formControlName="email"
@@ -70,7 +65,13 @@
           [ngClass]="{ 'border-red-500 text-red-400 placeholder:text-red-400': errorForm }"
         />
       </div>
-        <button type="submit" class="btn-primary text-lg text-center py-5 w-full ...">Subscribe to monthly newsletter</button>
+      <button
+        type="submit"
+        class="btn-primary p-4 w-full"
+        [disabled]="!newsForm.valid"
+      >
+        Subscribe to monthly newsletter
+      </button>
     </form>
   </div>
 </section>

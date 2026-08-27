@@ -1,23 +1,21 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { Router, RouterModule } from '@angular/router';
+import { Router } from '@angular/router';
 import { Location } from '@angular/common';
 
 
 @Component({
   selector: 'app-thanks',
   standalone: true,
-  imports: [CommonModule, RouterModule],
   templateUrl: './thanks.component.html'
 })
 export class ThanksComponent {
   email: string = '';
-  constructor(private router: Router, private location: Location) { 
+  constructor(private router: Router, private location: Location) {
 
-    const state = this.location.getState() as { email?: { email: string } };
-    this.email = state.email?.email ?? '';
+    const state = this.location.getState() as { email?: string } | null;
+    this.email = state?.email ?? '';
   }
-dismiss(){
-  this.router.navigate(['/', 'form']);
-}
+  dismiss() {
+    this.router.navigate(['/']);
+  }
 }
