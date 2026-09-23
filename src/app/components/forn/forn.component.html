@@ -1,9 +1,9 @@
-<section class="px-8 flex lg:justify-center flex-col gap-4 lg:h-full">
+<section class="flex lg:justify-center lg:h-full flex-col lg:p-4 gap-4 lg:gap-8">
   <div>
-    <h1 class="text-4xl lg:text-6xl font-bold text-gray-800">Stay updated!</h1>
+    <h1 class="text-4xl lg:text-5xl font-bold text-gray-800">Stay updated!</h1>
   </div>
   <div>
-    <p class="text-gray-600 font-normal lg:text-lg">
+    <p class="text-gray-600 font-normal lg:text-base">
       Join 60,000+ product managers receiving monthly updates on:
     </p>
   </div>
@@ -13,7 +13,7 @@
         <picture class="w-auto">
           <img class="mr-4" src="assets/images/icon-list.svg" alt="" />
         </picture>
-        <p class="w-full text-gray-600 font-normal lg:text-lg">
+        <p class="w-full text-gray-600 font-normal lg:text-base">
           Product discovery and building what matters
         </p>
       </li>
@@ -21,7 +21,7 @@
         <picture class="w-auto">
           <img class="mr-4" src="assets/images/icon-list.svg" alt="" />
         </picture>
-        <p class="w-full text-gray-600 font-normal lg:text-lg">
+        <p class="w-full text-gray-600 font-normal lg:text-base">
           Measuring to ensure updates are a success
         </p>
       </li>
@@ -29,7 +29,7 @@
         <picture class="w-auto">
           <img class="mr-4" src="assets/images/icon-list.svg" alt="" />
         </picture>
-        <p class="w-full text-gray-600 font-normal lg:text-lg">
+        <p class="w-full text-gray-600 font-normal lg:text-base">
           And much more!
         </p>
       </li>
@@ -48,10 +48,11 @@
         >
         <p
           id="email-error"
-          [ngClass]="{ 'text-red-400': errorForm, 'hidden': !errorForm }"
+          [ngClass]="{ 'text-red-400': errorForm, hidden: !errorForm }"
           class="font-bold text-xs text-gray-600 lg:text-lg"
-          >Valid email required</p
         >
+          Valid email required
+        </p>
       </div>
       <div>
         <input
@@ -62,7 +63,9 @@
           formControlName="email"
           [attr.aria-invalid]="errorForm"
           [attr.aria-describedby]="errorForm ? 'email-error' : null"
-          [ngClass]="{ 'border-red-500 text-red-400 placeholder:text-red-400': errorForm }"
+          [ngClass]="{
+            'border-red-500 text-red-400 placeholder:text-red-400': errorForm,
+          }"
         />
       </div>
       <button
