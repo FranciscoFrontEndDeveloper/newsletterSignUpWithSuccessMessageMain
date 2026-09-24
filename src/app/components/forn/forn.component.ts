@@ -17,14 +17,20 @@ export class FornComponent {
   public newsForm = this.formBuilder.group({
     email: ['', [Validators.required, Validators.email]],
   });
-  public errorForm = false;
+
+  get errorForm(): boolean {
+    const control = this.newsForm.get('email');
+    return !!control && control.touched && control.invalid;
+  }
+
   constructor(private formBuilder: FormBuilder, private router: Router) {}
 
-  onSubmit() {
+onSubmit() {
+    this.newsForm.markAllAsTouched();
     if (this.newsForm.valid) {
-      this.router.navigate(['/', 'thanks'], { state: { email: this.newsForm.get('email')?.value } });
-    } else {
-      this.errorForm = true;
+      this.router.navigate(['/', 'thanks'], {
+        state: { email: this.newsForm.get('email')?.value },
+      });
     }
   }
 }

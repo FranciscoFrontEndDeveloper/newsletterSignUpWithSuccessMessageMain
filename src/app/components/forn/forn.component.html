@@ -1,4 +1,6 @@
-<section class="flex lg:justify-center lg:h-full flex-col lg:p-4 gap-4 lg:gap-8">
+<section
+  class="flex lg:justify-center lg:h-full flex-col p-6 lg:p-4 gap-4 lg:gap-8"
+>
   <div>
     <h1 class="text-4xl lg:text-5xl font-bold text-gray-800">Stay updated!</h1>
   </div>
@@ -43,13 +45,13 @@
       class="flex flex-col gap-4"
     >
       <div class="flex justify-between">
-        <label class="font-bold text-xs text-gray-600 lg:text-lg" for="email"
+        <label class="font-bold text-xs text-gray-600 lg:text-base" for="email"
           >Email address</label
         >
         <p
           id="email-error"
           [ngClass]="{ 'text-red-400': errorForm, hidden: !errorForm }"
-          class="font-bold text-xs text-gray-600 lg:text-lg"
+          class="font-bold text-xs text-gray-600 lg:text-base"
         >
           Valid email required
         </p>
@@ -57,14 +59,15 @@
       <div>
         <input
           id="email"
-          class="border-solid p-4 border-gray-300 border-2 rounded-lg w-full placeholder:p-2 hover:border-black"
+          class="border-solid p-4 border border-[hsl(231,7%,60%)] focus:border-[hsl(235,18%,26%)] focus:outline-none rounded-lg w-full placeholder:p-2"
           type="text"
           placeholder="email@company.com"
           formControlName="email"
           [attr.aria-invalid]="errorForm"
           [attr.aria-describedby]="errorForm ? 'email-error' : null"
           [ngClass]="{
-            'border-red-500 text-red-400 placeholder:text-red-400': errorForm,
+            '!border-[#ff6257] bg-[#ffe8e6] text-[#ff6257] placeholder:text-[#ff6257]':
+              errorForm,
           }"
         />
       </div>
